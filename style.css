@@ -1,0 +1,273 @@
+/*FORSIDE AF SLØR MAGAZINE*/
+.hero-image-forside {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin-bottom: 40px;
+  display: block;
+  max-width: 100%;
+}
+
+.mini-galleri {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 60px auto;
+  max-width: 1000px;
+  gap: 20px;
+  position: relative;
+}
+
+.mini-galleri-billeder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  gap: 20px;
+}
+
+.mini-galleri-billeder img {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* EVENTS SIDE*/
+.events-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px 0 20px;
+}
+
+/* scrollbare event cards - horizontalt */
+.events-scroll {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 250px;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.event-card {
+  position: relative;
+}
+
+.event-card img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*  hover effekt  */
+.event-card img:hover {
+  transform: scale(1.05);
+  opacity: 10;
+}
+
+/* mobil version */
+@media (max-width: 600px) {
+  .event-card img {
+    height: 200px;
+  }
+}
+
+/*KULTUR SIDE*/
+.kultur-side {
+  display: grid;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+
+.intro-tekst {
+  display: grid; /* centrere teksten*/
+  justify-items: center;
+  gap: 10px;
+}
+
+/* intro tekst styles */
+.intro-tekst h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.intro-tekst h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.intro-tekst p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.mini-sektion {
+  display: grid;
+  grid-template-columns: 300px 1fr auto;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.mini-sektion img {
+  width: 300px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.billedegalleri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 30px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.billedegalleri img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+/* mobil version */
+@media (max-width: 600px) {
+  .billedegalleri {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .mini-sektion {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*BRANDS OG TALENTER*/
+.profil,
+.brands,
+.fotograf {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.meller_tekst2 {
+  display: grid;
+  gap: 50px;
+  margin-top: 60px;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.meller_tekst2 .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.more_edgy {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 24px 0 22px;
+}
+
+/* mobil version */
+@media (max-width: 600px) {
+  .meller_tekst2 .row {
+    grid-template-columns: 1fr;
+  }
+
+  .more_edgy {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .foto-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*STREETWEAR SIDE*/
+
+.intro-herobillede {
+  padding: 40px 20px;
+}
+.streetwear-titler {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.streetwear-galleri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.closeup-billede {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 6px;
+  margin: 20px auto;
+  display: block;
+}
+
+.to-billeder-streetwear {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+.musthaves {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 50px 60px;
+  justify-items: center;
+  align-items: start;
+  margin: 60px auto;
+  max-width: 1000px;
+}
+
+/* mobil version */
+@media (max-width: 600px) {
+  .streetwear-galleri {
+    grid-template-columns: 1fr;
+  }
+
+  .to-billeder-streetwear {
+    grid-template-columns: 1fr;
+  }
+
+  .musthaves {
+    grid-template-columns: 1fr;
+  }
+}

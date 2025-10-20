@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  background-color: #f4efe7;
+  color: #000;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ---------- TYPOGRAFI ---------- */
+/* googlefonte – sørg for at de loader før resten */
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Aboreto&family=Adamina&display=swap");
+
+/* overskrifter */
+h1,
+h2,
+h3 {
+  font-family: "Aboreto";
+  margin: 0;
+  padding: 0;
+}
+
+/* underoverskrifter, links, knapper */
+h4,
+h5,
+h6,
+li,
+a,
+button {
+  font-family: "Abel", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* brødtekst */
+p {
+  font-family: "Adamina", serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- HEADER ---------- */
+/* går igen på alle sider */
+header {
+  background-color: #f4efe7;
+  color: #000000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* logo midt */
+.site-logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* sort streg mellem sektioner */
+.separator {
+  border: none;
+  border-top: 3px solid #000;
+  margin: 0;
+}
+
+/* ---------- NAVIGATION ---------- */
+/* vandret menu – husk hover kontrast */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px 20px 8px 20px;
+  font-weight: bold;
+  background-color: #f4efe7;
+  border-bottom: 2px solid transparent;
+}
+
+/* hover: sort baggrund, hvid tekst */
+nav a:hover {
+  background-color: #000;
+  color: #f4efe7;
+  border-bottom: 2px solid #000;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #f4efe7;
+  border-top: 2px solid #000;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* lidt mindre logo i bunden */
+footer .site-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* socials under logoet */
+footer section {
+  margin-top: 10px;
+}
+
+/* “følg os” tekst */
+footer p {
+  font-family: "Abel", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* sociale medier ikoner */
+footer section a img,
+footer section img {
+  width: 28px !important;
+  height: 28px !important;
+  object-fit: contain;
+  margin: 0 8px;
+  display: center;
+  transition: opacity 0.3s ease;
+}
